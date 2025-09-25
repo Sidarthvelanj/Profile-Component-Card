@@ -1,0 +1,90 @@
+/* Full-page wrapper to center the card */
+.page {
+  background-color: #6e6b6b; /* Soft gray */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card container */
+.card {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* Header with gradient and avatar */
+.card-header {
+  height: 180px;
+  background: linear-gradient(to right, #213457, #067ae0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top-gradient {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  position: absolute;
+  bottom: -70px;
+  background-color: rgb(79, 79, 79);
+}
+
+/* Body section */
+.card-body {
+  padding: 70px 40px 32px;
+  text-align: center;
+}
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #2a5298;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #1e3c72;
+}
+
+.card-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1e3c72;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #464545;
+  font-weight: 500;
+  line-height: 1.6;
+}
